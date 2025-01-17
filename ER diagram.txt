@@ -1,46 +1,46 @@
-## Hotel Table:
+Hotel Table:
 
-**Primary Key:** 
+Primary Key: 
 Hotel_Id (INTEGER)
 
-**Attributes:**
+Attributes:
 Hotel_Name (STRING)
 
-## Employee Table:
+Employee Table:
 
-**Primary Key:** 
+Primary Key: 
 Employee_Id (INTEGER)
 
-**Attributes:**
+Attributes:
 Employee_Name (STRING)
 Employee_Speciality (STRING)
 Hotel_Id (INTEGER, Foreign Key referencing Hotel_Id in Hotel)
 Leads_Employee_Id (INTEGER, Self-referencing Foreign Key)
 
-## Type Table:
+Type Table:
 
-**Primary Key:** 
+Primary Key: 
 Type_Id (INTEGER)
 
-**Attributes:**
+Attributes:
 Type_Name (STRING)
 
-## Room Table:
+Room Table:
 
-**Primary Key:** 
+Primary Key: 
 Room_Id (INTEGER)
 
-**Attributes:**
+Attributes:
 Floor (INTEGER)
 Type_Id (INTEGER, Foreign Key referencing Type_Id in Type)
 Hotel_Id (INTEGER, Foreign Key referencing Hotel_Id in Hotel)
 
-## Category Table:
+Category Table:
 
-**Primary Key:** 
+Primary Key: 
 Category_Id (INTEGER)
 
-**Attributes:**
+Attributes:
 Category_Name (STRING)
 Price (DECIMAL)
 Beds_Numbers (INTEGER)
